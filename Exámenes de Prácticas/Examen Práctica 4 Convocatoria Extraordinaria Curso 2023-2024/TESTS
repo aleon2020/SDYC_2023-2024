@@ -1,0 +1,32 @@
+TEST 1: Modo secuencial, 1P | 1S - [3 pt]
+
+Resultado esperado: El suscriber en TEST debe recibir el mensaje, el de TEST2 no debe recibir nada. Si ejecutáis todo en local, la latencia debe salir en este caso en orden de [0.001 - 0.0001]
+
+./broker --port 9963 --mode secuencial
+./subscriber --ip 0.0.0.0 --port 9963 --topic TEST
+./subscriber --ip 0.0.0.0 --port 9963 --topic TEST2
+./publisher --ip 0.0.0.0 --port 9963 --topic TEST
+
+TEST 2: Modo secuencial, 1P | 500S - [2 pt]
+
+Resultado esperado: los 500 subscribers deben recibir los mensajes secuencialmente (viendo la latencia se ve la secuencialidad).
+
+./broker --port 9409 --mode secuencial
+./subscriber --ip 0.0.0.0 --port 9409 --topic TEST [500]
+./publisher --ip 0.0.0.0 --port 9409 --topic TEST
+
+TEST 3: Modo paralelo, 1P | 500S - [2 pt]
+
+Resultado esperado: los 500 subscribers deben recibir los mensajes paralelamente (latencias podrían ser ser similar al caso de secuencial).
+
+./broker --port 9831 --mode paralelo
+./subscriber --ip 0.0.0.0 --port 9831 --topic TEST [500]
+./publisher --ip 0.0.0.0 --port 9831 --topic TEST
+
+TEST 4: Modo justo, 1P | 500S - [2 pt]
+
+Resultado esperado: los 500 subscribers deben recibir los mensajes en un rango corto de tiempo (viendo la latencia se puede analizar)
+
+./broker --port 9903 --mode justo
+./subscriber --ip 0.0.0.0 --port 9903 --topic TEST [500]
+./publisher --ip 0.0.0.0 --port 9903 --topic TEST

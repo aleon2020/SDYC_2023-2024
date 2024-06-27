@@ -1,0 +1,48 @@
+TEST 1:
+python3 /home/profes/rocapal/checks/SDC/checkP3.py 1
+## TEST 1: Server (P:reader) - Client (reader)
+Init counter = 0
+./server --port 9137 --priority reader
+./client --ip 0.0.0.0 --port 9137 --mode reader --threads 200
+Client: 
+{'lines': 200, 'exec_time': 0.19734621047973633, 'mean_latency_wait': 285.945}
+Server: 
+{'lines': 200, 'final_counter': 0, 'clients': [('LECTOR', 200)]}
+
+TEST 2:
+python3 /home/profes/rocapal/checks/SDC/checkP3.py 2
+## TEST 2 Server (P: writer) - Client (writer)
+Init counter = 123
+./server --port 9614 --priority reader
+./client --ip 0.0.0.0 --port 9614 --mode writer --threads 200
+Client: 
+{'lines': 200, 'exec_time': 23.394973754882812, 'mean_latency_wait': 11588737783.21}
+Server: 
+{'lines': 200, 'final_counter': 323, 'clients': [('ESCRITOR', 200)]}
+
+TEST 3:
+python3 /home/profes/rocapal/checks/SDC/checkP3.py 3
+## TEST 3 Server (P: writer) - 2 Clients (writer, reader)
+Init counter = 200
+./server --port 9075 --priority writer
+./client --ip 0.0.0.0 --port 9075 --mode writer --threads 200
+./client --ip 0.0.0.0 --port 9075 --mode reader --threads 10
+Client (writer): 
+{'lines': 200, 'exec_time': 23.39389181137085, 'mean_latency_wait': 11577533070.275}
+Client (reader): 
+{'lines': 10, 'exec_time': 23.03987145423889, 'mean_latency_wait': 22884502530.4}
+Server: 
+{'lines': 210, 'final_counter': 400, 'clients': [('ESCRITOR', 200), ('LECTOR', 10)]}
+
+TEST 4:
+python3 /home/profes/rocapal/checks/SDC/checkP3.py 4
+## TEST 4 Server (P:reader) - 2 Clients (writer, reader)
+./server --port 9096 --priority reader
+./client --ip 0.0.0.0 --port 9096 --mode writer --threads 200
+./client --ip 0.0.0.0 --port 9096 --mode reader --threads 20
+Client (writer): 
+{'lines': 200, 'exec_time': 23.437483549118042, 'mean_latency_wait': 11647564543.725}
+Client (reader): 
+{'lines': 20, 'exec_time': 0.2002720832824707, 'mean_latency_wait': 44903132.8}
+Server: 
+{'lines': 220, 'final_counter': 600, 'clients': [('ESCRITOR', 5), ('LECTOR', 20), ('ESCRITOR', 195)]}
