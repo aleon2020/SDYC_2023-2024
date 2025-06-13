@@ -40,11 +40,7 @@ Directorio ['Prácticas'](https://github.com/aleon2020/SDYC_2023-2024/tree/main/
 
 Además, también se tienen los enunciados de cada una de las prácticas en formato PDF.
 
-## 5. Exámenes de Prácticas
-
-Directorio ['Exámenes de Prácticas'](https://github.com/aleon2020/SDYC_2023-2024/tree/main/Ex%C3%A1menes%20de%20Pr%C3%A1cticas): Dentro de este directorio se encuentran los enunciados de los tests de modificaciones realizados en las prácticas 3 y 4. Ya que, a diferencia de las prácticas 1 y 2, no basta con entregar la práctica en la fecha estipulada, sino que la nota de las prácticas 3 y 4 corresponde a la realización de una serie de modificaciones partiendo de una versión funcional de la misma. En este directorio se encuentran los enunciados de los tests de modificaciones tanto de la Convocatoria Ordinaria como de la Extraordinaria del curso 2023-2024.
-
-## 6. Otros recursos
+## 5. Otros recursos
 
 [GIT/WIKI DE LA ASIGNATURA](https://gitlab.eif.urjc.es/roberto.calvo/sdc/-/wikis/home)
 
