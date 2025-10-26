@@ -1,55 +1,55 @@
 # Sistemas Distribuidos y Concurrentes 2023-2024
 
-¡Bienvenido! En este repositorio se encuentran todos los materiales correspondientes a la asignatura de Sistemas Distribuidos y Concurrentes.
+Welcome! This repository contains all the materials for the subject **Sistemas Distribuidos y Concurrentes**.
 
-A continuación se detallan brevemente todos los contenidos que se encuentran en este repositorio, con el objetivo de facilitar la preparación del examen final de la asignatura y de abordar la misma lo mejor posible.
+Below is a brief description of all the content found in this repository, with the aim of facilitating preparation for the final exam and helping you tackle the subject as best as possible.
 
-IMPORTANTE: SI OBSERVAS QUE HAY ALGÚN ERROR O ALGO QUE FALTE EN ALGÚN ARCHIVO SUBIDO A ESTE REPOSITORIO (O SI HAY ALGUNA DUDA EN CUANTO A COMPRENSIÓN), DÉJAME UN ISSUE Y TRATARÉ DE RESOLVER EL PROBLEMA LO ANTES POSIBLE. NO TE OLVIDES DEJARME UNA STAR Y ESPERO QUE TODO ESTE MATERIAL TE SEA DE GRAN AYUDA.
+**IMPORTANT**: IF YOU NOTICE ANY MISTAKES OR MISSING IN ANY FILE UPLOADED TO THIS REPOSITORY (OR IF THERE IS ANY DOUBT REGARDING UNDERSTANDING), LEAVE ME AN ISSUE AND I WILL TRY TO RESOLVE THE PROBLEM AS SOON AS POSSIBLE. DON'T FORGET TO LEAVE ME A STAR AND I HOPE THAT ALL THIS MATERIAL IS OF GREAT HELP TO YOU.
 
-Clona este repositorio ejecutando el siguiente comando:
+Clone this repository by running the following command:
 
 ```sh
 git clone https://<token>@github.com/aleon2020/SDYC_2023-2024.git
 ```
 
-IMPORTANTE: Añade tu token tal y como se muestra. Esto se hace con el objetivo de no tener que introducir el token en la terminal cada vez que se quiera actualizar el repositorio utilizando el comando 'git pull'.
+**IMPORTANT**: Add your token exactly as shown. This is so you don't have to enter the token in the terminal every time you want to update the repository using the 'git pull' command.
 
-Si ya has clonado este repositorio, ejecuta el siguiente comando antes de que empieces a trabajar con él, ya que pueden haberse añadido nuevos cambios o modificaciones. Esto se hace con el objetivo de asegurarte de que tienes clonada la versión más reciente del repositorio:
+If you've already cloned this repository, run the following command before starting to work with it, as new changes or modifications may have been added. This is to ensure you have cloned the most recent version of the repository:
 
 ```sh
 git pull
 ```
 
-## 1. Resumen de los contenidos de teoría
+## 1. Summary of the theory contents
 
-Fichero ['Resumen Teoría SDYC.pdf'](https://github.com/aleon2020/SDYC_2023-2024/blob/main/Resumen%20Teor%C3%ADa%20SDYC.pdf): Resumen de teoría en formato PDF.
+File ['Resumen Teoría SDYC.pdf'](https://github.com/aleon2020/SDYC_2023-2024/blob/main/Resumen%20Teor%C3%ADa%20SDYC.pdf): Theory summary in PDF format.
 
-IMPORTANTE: Para hacer uso del índice interactivo que viene implementado en el resumen, debes descargar el documento en formato PDF.
+**IMPORTANT**: To use the interactive index included in the summary, you must download the document in PDF format.
 
-## 2. Diapositivas utilizadas en clase
+## 2. Slides used in class
 
-Directorio ['Diapositivas Teoría'](https://github.com/aleon2020/SDYC_2023-2024/tree/main/Diapositivas%20Teor%C3%ADa): Dentro de este directorio se encuentran las diapositivas utilizadas en clase para abordar los contenidos teóricos de la asignatura.
+Directory ['Diapositivas Teoría'](https://github.com/aleon2020/SDYC_2023-2024/tree/main/Diapositivas%20Teor%C3%ADa): This directory contains the slides used in class to address the theoretical content of the subject.
 
-## 3. Ejemplos y ejercicios opcionales
+## 3. Optional examples and exercises
 
-Directorio ['Ejercicios'](https://github.com/aleon2020/SDYC_2023-2024/tree/main/Ejercicios): Dentro de este directorio se encuentra un ejemplo básico para comprender el funcionamiento de los ficheros Makefile, y el enunciado de un ejercicio propuesto en clase sobre el cálculo de latencias utilizando mutex y semáforos.
+Directory ['Ejercicios'](https://github.com/aleon2020/SDYC_2023-2024/tree/main/Ejercicios): Within this directory you will find a basic example to understand how Makefiles work, and the statement of a class exercise on calculating latencies using mutexes and semaphores.
 
-## 4. Prácticas
+## 4. Practices
 
-Directorio ['Prácticas'](https://github.com/aleon2020/SDYC_2023-2024/tree/main/Pr%C3%A1cticas): Cada uno de estos directorios corresponden a cada una de las prácticas realizadas en la asignatura, los cuáles incluyen el fichero de código fuente que se solicita y el enunciado de la misma.
+Directory ['Prácticas'](https://github.com/aleon2020/SDYC_2023-2024/tree/main/Pr%C3%A1cticas): Each of these directories corresponds to each of the practices carried out in the subject, which include the requested source code file and the statement of the same.
 
-Además, también se tienen los enunciados de cada una de las prácticas en formato PDF.
+In addition, the statements for each of the practices are also available in PDF format.
 
-## 5. Otros recursos
+## 5. Other resources
 
-[GIT/WIKI DE LA ASIGNATURA](https://gitlab.eif.urjc.es/roberto.calvo/sdc/-/wikis/home)
+[GIT/WIKI OF THE SUBJECT](https://gitlab.eif.urjc.es/roberto.calvo/sdc/-/wikis/home)
 
-[GUÍA DE ESTILO](https://gitlab.eif.urjc.es/roberto.calvo/sdc/-/wikis/Gu%C3%ADa-de-Estilo-C)
+[STYLE GUIDE](https://gitlab.eif.urjc.es/roberto.calvo/sdc/-/wikis/Gu%C3%ADa-de-Estilo-C)
 
-[LIBRERÍA POSIX PTHREAD](https://www.cs.cmu.edu/afs/cs/academic/class/15492-f07/www/pthreads.html)
+[POSIX PTHREAD LIBRARY](https://www.cs.cmu.edu/afs/cs/academic/class/15492-f07/www/pthreads.html)
 
-[TUTORIAL MAKEFILE](https://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/)
+[MAKEFILE TUTORIAL](https://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/)
 
-[MANUAL BASH](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html)
+[BASH MANUAL](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html)
 
-[MANUAL PYTHON](https://docs.python.org/3/)
+[PYTHON MANUAL](https://docs.python.org/3/)
